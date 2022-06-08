@@ -9,16 +9,17 @@
 </head>
 <body>
     <?php
-        setcookie("question2", $_POST["question2"]);
+        session_start();
+        $_SESSION["question2"] = $_POST["question2"];
     ?>
-    <section class="main-quiz">
+   <section class="main-quiz">
         <h2 class="main-title">Pergunta 3</h2>
-        <h3 class="main-tile -change">Em que ano foi criada a linguagem C?</h3>
+        <h3 class="main-tile -change">Qual o ano de lançamento do último livro?</h3>
         <form action="question04_cookies.php" method="post" onsubmit="return validaForm()">
-            <input type="radio" name="question3" value="1971C">Em 1971<br>
-            <input type="radio" name="question3" value="1981C">Em 1981<br>
-            <input type="radio" name="question3" value="1980C">Em 1980<br>
-            <input type="radio" name="question3" value="1972C">Em 1972<br>
+            <input type="radio" name="question3" value="2008">2008<br>
+            <input type="radio" name="question3" value="2009">2009<br>
+            <input type="radio" name="question3" value="2010">2010<br>
+            <input type="radio" name="question3" value="2011">2011<br>
             <br>
             <input type="submit" name="enviar" value="Enviar">
         </form>

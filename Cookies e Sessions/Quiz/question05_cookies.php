@@ -13,12 +13,12 @@
     ?>
     <section id="main-quiz">
         <h2 class="main-title">Pergunta 5</h2>
-        <h3 class="main-title -change">Quem foi o pai da computação?</h3>
+        <h3 class="main-title -change">Quem é o atual rei, em Porto Real?</h3>
         <form action="answers_cookies.php" method="post" onsubmit="return validaForm()">
-            <input type="radio" name="question5" value="teto">Teto<br>
-            <input type="radio" name="question5" value="matue">Matuê<br>
-            <input type="radio" name="question5" value="alanturing">Alan Turing<br>
-            <input type="radio" name="question5" value="bill">Bill Gates<br>
+            <input type="radio" name="question5" value="jonsnow">Jon Snow<br>
+            <input type="radio" name="question5" value="aegon">Aegon VI<br>
+            <input type="radio" name="question5" value="tommem">Tommem I<br>
+            <input type="radio" name="question5" value="jofrey">Jofrey I<br>
             <br>
             <input type="submit" name="enviar" value="Enviar">
         </form>

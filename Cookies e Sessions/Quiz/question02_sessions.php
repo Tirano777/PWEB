@@ -9,16 +9,17 @@
 </head>
 <body>
     <?php
-        setcookie("question1", $_POST["question1"]);
+        session_start();
+        $_SESSION["question1"] = $_POST["question1"];
     ?>
     <section class="main-quiz">
         <h2 class="main-title">Pergunta 2</h2>
-        <h3 class="main-title -change">Em que ano foi criada a linguagem python?</h3>
+        <h3 class="main-title -change">Em que ano, cronologicamente, a história do primeiro livro se inicia?</h3>
         <form action="question03_cookies.php" method="post" onsubmit="return validaForm()">
-            <input type="radio" name="question2" value="1895py">Em 1895<br>
-            <input type="radio" name="question2" value="1991py">Em 1991<br>
-            <input type="radio" name="question2" value="1897py">Em 1897<br>
-            <input type="radio" name="question2" value="1996py">Em 1996<br>
+            <input type="radio" name="question2" value="297py">297 d.C<br>
+            <input type="radio" name="question2" value="298py">298 d.C<br>
+            <input type="radio" name="question2" value="299py">299 d.C<br>
+            <input type="radio" name="question2" value="300py">300 d.C<br>
             <br>
             <input type="submit" name="enviar" value="Enviar">
         </form>

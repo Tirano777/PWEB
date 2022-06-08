@@ -5,30 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Pergunta 2</title>
+    <title>Pergunta 4</title>
 </head>
 <body>
     <?php
-        session_start();
-        $_SESSION["question1"] = $_POST["question1"];
+        setcookie("question3", $_POST["question3"]);
     ?>
     <section class="main-quiz">
-        <h2 class="main-title">Pergunta 2</h2>
-        <h3 class="main-title -change">Em que ano foi criada a linguagem python?</h3>
-        <form action="question03_cookies.php" method="post" onsubmit="return validaForm()">
-            <input type="radio" name="question2" value="1895py">Em 1895<br>
-            <input type="radio" name="question2" value="1991py">Em 1991<br>
-            <input type="radio" name="question2" value="1897py">Em 1897<br>
-            <input type="radio" name="question2" value="1996py">Em 1996<br>
+        <h2 class="main-title">Pergunta 4</h2>
+        <h3 class="main-title -change">Em que ano aconteceu o Torneio de Harrenhal?</h3>
+        <form action="question05_cookies.php" method="post" onsubmit="return validaForm()">
+            <input type="radio" name="question4" value="281">281 d.C<br>
+            <input type="radio" name="question4" value="282">282 d.C<br>
+            <input type="radio" name="question4" value="283">283 d.C<br>
+            <input type="radio" name="question4" value="284">284 d.C<br>
             <br>
             <input type="submit" name="enviar" value="Enviar">
         </form>
         <br>
-        <img src="img/imagem2.jpg"  width="384" height="216">
+        <img src="img/imagem4.jpg"  width="384" height="216">
     </section>
 <script>
     function validaForm(){
-        var radios = document.getElementsByName("question2");
+        var radios = document.getElementsByName("question4");
         var formValido = false;
 
         var i = 0;
